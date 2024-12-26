@@ -1,0 +1,28 @@
+import dateparser
+
+def parse_t(line):
+    d = " ".join(line.split(" ")[2:-1])
+    return dateparser.parse(d)
+
+def parse_temp(line):
+    d = line.split(" ")[0]
+    return int(d)/1000
+
+for i,line in enumerate(open("CpuTempLog.txt").readlines()):
+    if i==0:
+        continue
+    t.append(parse_t(line))
+    w.append(parse_temp(line))
+  68: t
+  69: len(t)
+  70: plt.plot(t, w)
+  71: t
+  72: t[:2]
+  73: t[:6]
+  74: t.remove(0)
+  75: t.remove(None)
+  76: t[:6]
+  77: plt.plot(t, w)
+  78: plt.show
+  79: plt.show()
+  80: %history -g -f pitemp.txt
